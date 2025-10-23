@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Production Portfolio - Spring Boot Quiz Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .gig-image {
+            width: 1280px;
+            height: 752px;
+            background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 50px;
+        }
+
+        /* Decorative Background */
+        .gig-image::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: rgba(76, 175, 80, 0.08);
+            border-radius: 50%;
+            top: -200px;
+            right: -200px;
+        }
+
+        .gig-image::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            bottom: -150px;
+            left: -150px;
+        }
+
+        /* Left Side - Content */
+        .left-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .live-badge {
+            background: #27c93f;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: fit-content;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(39, 201, 63, 0.7); }
+            50% { box-shadow: 0 0 0 15px rgba(39, 201, 63, 0); }
+        }
+
+        .live-dot {
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: 900;
+            color: white;
+            line-height: 1.2;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+
+        .url-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .url-box span {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 800;
+            color: #4CAF50;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 600;
+        }
+
+        /* Right Side - Features */
+        .right-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .section-header {
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 12px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateX(5px);
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-top: auto;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .bottom-badge {
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+            background: rgba(76, 175, 80, 0.9);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: 700;
+            z-index: 3;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="gig-image">
+        <!-- Left Content -->
+        <div class="left-content">
+            <div class="live-badge">
+                <div class="live-dot"></div>
+                LIVE IN PRODUCTION
+            </div>
+
+            <div class="main-title">
+                🚀 Spring Boot 3<br>Quiz Platform
+            </div>
+
+            <div class="subtitle">
+                Portfolio Showcase - Deployed on Oracle Cloud Infrastructure
+            </div>
+
+            <div class="url-box">
+                <span>🔗</span>
+                <span>http://161.118.188.237:8080</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Questions</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Pages Built</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">DB Tables</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">$0</div>
+                    <div class="stat-label">Hosting Cost</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="right-content">
+            <div class="section-header">✨ Key Features</div>
+
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-icon">🔐</div>
+                    <div class="feature-text">Spring Security Auth & Role-Based Access</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💾</div>
+                    <div class="feature-text">PostgreSQL + Hibernate JPA (Optimized)</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📧</div>
+                    <div class="feature-text">Email Integration with HTML Templates</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👨‍💼</div>
+                    <div class="feature-text">Complete Admin Dashboard & Management</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <div class="feature-text">Responsive Design (Bootstrap 5 + Thymeleaf)</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🐳</div>
+                    <div class="feature-text">Docker Deployment with Zero Downtime</div>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <div class="tech-badge">Java 17</div>
+                <div class="tech-badge">Spring Boot 3</div>
+                <div class="tech-badge">PostgreSQL</div>
+                <div class="tech-badge">Docker</div>
+                <div class="tech-badge">Hibernate</div>
+                <div class="tech-badge">Bootstrap 5</div>
+                <div class="tech-badge">Spring Mail</div>
+                <div class="tech-badge">REST APIs</div>
+            </div>
+        </div>
+
+        <div class="bottom-badge">5+ Years Java Experience</div>
+    </div>
+</body>
+</html>

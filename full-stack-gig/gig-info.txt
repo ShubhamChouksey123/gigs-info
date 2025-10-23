@@ -1,0 +1,36 @@
+
+Transform your idea into **production-ready Spring Boot applications**—the same tech powering **Netflix, Airbnb**, and enterprise systems worldwide.
+
+🎯 **LIVE DEMO:** http://161.118.188.237:8080
+Quiz platform with auth, admin panel, **1000+ questions**—deployed on Oracle Cloud with **zero downtime**.
+
+**WHAT I BUILD:**
+• User authentication & role-based access
+• RESTful APIs with documentation
+• Admin dashboards with analytics
+• Email/SMS integration (SMTP, Twilio)
+• Payment systems (Stripe, PayPal)
+• Database apps with optimized queries
+• Quiz/Survey platforms & CMS
+• E-commerce backends
+
+**TECH STACK:**
+**Backend:** Spring Boot 3.x | Hibernate | Spring Security
+**Frontend:** Thymeleaf | Bootstrap 5 | JavaScript
+**Database:** PostgreSQL | MySQL
+**DevOps:** Docker | Docker Compose | CI/CD
+**Testing:** JUnit 5 | Integration tests
+
+**YOU GET:**
+✓ Clean, documented code (SOLID principles)
+✓ Database schema with migrations
+✓ Docker deployment config
+✓ Comprehensive setup guide
+✓ Full test suite
+✓ API docs (Swagger)
+✓ **30 days support**
+
+**WHY ME?**
+**5+ years enterprise Java** | Spring Boot certified | Production apps | Fast communication | Maintainable code
+
+💬 **Message before ordering** for custom timeline!

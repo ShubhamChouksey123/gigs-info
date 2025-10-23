@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Stack & Architecture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            width: 1280px;
+            height: 752px;
+            background: white;
+            /* border-radius: 20px; */
+            overflow: hidden;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 25px 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .header p {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            padding: 25px 40px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Tech Stack Section */
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .tech-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 16px;
+            border-radius: 12px;
+            border: 2px solid #dee2e6;
+            position: relative;
+        }
+
+        .tech-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            height: 4px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .tech-card.backend::before {
+            background: linear-gradient(90deg, #1a237e, #3949ab);
+        }
+
+        .tech-card.frontend::before {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .tech-card.devops::before {
+            background: linear-gradient(90deg, #27c93f, #20a035);
+        }
+
+        .tech-header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .tech-icon {
+            font-size: 32px;
+            margin-bottom: 6px;
+        }
+
+        .tech-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .tech-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .tech-item {
+            background: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .tech-item-icon {
+            font-size: 18px;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 16px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .feature-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1a237e;
+            margin-bottom: 5px;
+        }
+
+        .feature-desc {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        /* Footer Stats */
+        .footer {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 18px 40px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            text-align: center;
+        }
+
+        .stat-card {
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Header -->
+        <div class="header">
+            <h1>💎 Enterprise Technology Stack</h1>
+            <p>Full-Stack Spring Boot Application Architecture</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Tech Stack Grid -->
+            <div class="tech-stack">
+                <!-- Backend -->
+                <div class="tech-card backend">
+                    <div class="tech-header">
+                        <div class="tech-icon">⚙️</div>
+                        <div class="tech-title">Backend</div>
+                    </div>
+                    <ul class="tech-list">
+                        <li class="tech-item">
+                            <span class="tech-item-icon">🚀</span>
+                            Spring Boot 3
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">🗂️</span>
+                            Hibernate JPA
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">🔐</span>
+                            Spring Security
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">🐘</span>
+                            PostgreSQL
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Frontend -->
+                <div class="tech-card frontend">
+                    <div class="tech-header">
+                        <div class="tech-icon">🎨</div>
+                        <div class="tech-title">Frontend</div>
+                    </div>
+                    <ul class="tech-list">
+                        <li class="tech-item">
+                            <span class="tech-item-icon">📄</span>
+                            Thymeleaf
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">🎨</span>
+                            Bootstrap 5
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">⚡</span>
+                            JavaScript
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">🔌</span>
+                            REST APIs
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DevOps -->
+                <div class="tech-card devops">
+                    <div class="tech-header">
+                        <div class="tech-icon">🛠️</div>
+                        <div class="tech-title">DevOps</div>
+                    </div>
+                    <ul class="tech-list">
+                        <li class="tech-item">
+                            <span class="tech-item-icon">🐳</span>
+                            Docker
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">📦</span>
+                            Docker Compose
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">🔧</span>
+                            Maven
+                        </li>
+                        <li class="tech-item">
+                            <span class="tech-item-icon">📚</span>
+                            Git
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <div class="feature-title">Clean Code</div>
+                    <div class="feature-desc">SOLID principles, readable & maintainable code</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧪</div>
+                    <div class="feature-title">Unit Tested</div>
+                    <div class="feature-desc">JUnit 5 tests with high code coverage</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <div class="feature-title">Well Documented</div>
+                    <div class="feature-desc">Comprehensive JavaDoc & README guides</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <div class="feature-title">Security First</div>
+                    <div class="feature-desc">Input validation, SQL injection prevention, CSRF protection</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-title">Optimized</div>
+                    <div class="feature-desc">Database query optimization & performance tuning</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Stats -->
+        <div class="footer">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Technologies Mastered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
