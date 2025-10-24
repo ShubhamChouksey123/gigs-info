@@ -89,3 +89,6 @@ coverage/
 # Documentation build artifacts
 docs/_build/
 site/
+
+
+# rough-ss/*

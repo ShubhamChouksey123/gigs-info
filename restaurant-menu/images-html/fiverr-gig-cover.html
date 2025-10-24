@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Digital Menu - Fiverr Gig Cover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .gig-cover {
+            width: 1280px;
+            height: 752px;
+            background: linear-gradient(135deg, #d84315 0%, #e65100 50%, #ff6f00 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 50px 100px 50px; /* Added bottom padding for bottom-bar */
+        }
+
+        /* Decorative Background */
+        .gig-cover::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -200px;
+            right: -150px;
+        }
+
+        .gig-cover::after {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: rgba(255, 193, 7, 0.15);
+            border-radius: 50%;
+            bottom: -250px;
+            left: -200px;
+        }
+
+        /* Content */
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.95);
+            color: #d84315;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-icon {
+            font-size: 90px;
+            margin: 5px 0;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-title {
+            font-size: 58px;
+            font-weight: 900;
+            color: white;
+            line-height: 1.1;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 600;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 0;
+        }
+
+        .features-row {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .feature-pill {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-pill .icon {
+            font-size: 28px;
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 3;
+        }
+
+        .price-tag {
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .price-tag .amount {
+            color: #FFC107;
+            font-size: 36px;
+        }
+
+        .cta {
+            background: white;
+            color: #d84315;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: 800;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="gig-cover">
+        <div class="content">
+            <div class="badge">QR CODE READY • FREE HOSTING • NO SUBSCRIPTIONS</div>
+
+            <div class="main-icon">🍽️</div>
+
+            <div class="main-title">
+                Restaurant Digital<br>Menu Website
+            </div>
+
+            <div class="subtitle">
+                Modern, Professional & Easy to Update
+            </div>
+
+            <div class="features-row">
+                <div class="feature-pill">
+                    <div class="icon">📱</div>
+                    <div>Mobile Optimized</div>
+                </div>
+                <div class="feature-pill">
+                    <div class="icon">⚡</div>
+                    <div>Instant Updates</div>
+                </div>
+                <div class="feature-pill">
+                    <div class="icon">🎨</div>
+                    <div>Admin Panel</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="price-tag">
+                Starting at <span class="amount">$150</span>
+            </div>
+            <div class="cta">
+                Transform Your Restaurant →
+            </div>
+        </div>
+    </div>
+</body>
+</html>
