@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot API Gig Cover - Fiverr Image 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        .card {
+            width: 1280px;
+            height: 752px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Section */
+        .header {
+            padding: 40px 50px 30px 50px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header .subtitle {
+            font-size: 20px;
+            color: #e0e7ff;
+            font-weight: 500;
+        }
+
+        /* Main Content Section */
+        .main-content {
+            flex: 1;
+            display: flex;
+            padding: 0 50px;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* Left Side - Code Snippet */
+        .code-section {
+            flex: 1;
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .code-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .code-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .code-dot.red { background: #ff5f56; }
+        .code-dot.yellow { background: #ffbd2e; }
+        .code-dot.green { background: #27c93f; }
+
+        .code-title {
+            color: #9ca3af;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .code-content {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #d4d4d4;
+        }
+
+        .code-line {
+            margin: 3px 0;
+        }
+
+        .keyword { color: #569cd6; }
+        .annotation { color: #4ec9b0; }
+        .class-name { color: #4ec9b0; }
+        .string { color: #ce9178; }
+        .comment { color: #6a9955; font-style: italic; }
+        .method { color: #dcdcaa; }
+
+        /* Right Side - Tech Stack */
+        .tech-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 18px 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.2s;
+        }
+
+        .tech-badge:hover {
+            transform: translateX(5px);
+        }
+
+        .tech-icon {
+            width: 50px;
+            height: 50px;
+            background: #ffffff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .tech-icon.spring { color: #6db33f; }
+        .tech-icon.postgres { color: #336791; }
+        .tech-icon.docker { color: #2496ed; }
+        .tech-icon.jwt { color: #000000; }
+
+        .tech-info h3 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .tech-info p {
+            color: #e0e7ff;
+            font-size: 13px;
+        }
+
+        /* Footer Section */
+        .footer {
+            padding: 25px 50px;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #e0e7ff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .live-demo {
+            background: #27c93f;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Header -->
+        <div class="header">
+            <h1>Enterprise Spring Boot REST API Development</h1>
+            <div class="subtitle">Production-Proven • Secure • Scalable</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left: Code Snippet -->
+            <div class="code-section">
+                <div class="code-header">
+                    <div class="code-dot red"></div>
+                    <div class="code-dot yellow"></div>
+                    <div class="code-dot green"></div>
+                    <span class="code-title">UserController.java</span>
+                </div>
+                <div class="code-content">
+                    <div class="code-line"><span class="annotation">@RestController</span></div>
+                    <div class="code-line"><span class="annotation">@RequestMapping</span>(<span class="string">"/api/v1"</span>)</div>
+                    <div class="code-line"><span class="keyword">public class</span> <span class="class-name">UserController</span> {</div>
+                    <div class="code-line"></div>
+                    <div class="code-line">    <span class="annotation">@Autowired</span></div>
+                    <div class="code-line">    <span class="keyword">private</span> <span class="class-name">UserService</span> userService;</div>
+                    <div class="code-line"></div>
+                    <div class="code-line">    <span class="annotation">@PostMapping</span>(<span class="string">"/users"</span>)</div>
+                    <div class="code-line">    <span class="keyword">public</span> <span class="class-name">ResponseEntity</span>&lt;<span class="class-name">User</span>&gt; <span class="method">createUser</span>(</div>
+                    <div class="code-line">            <span class="annotation">@Valid</span> <span class="annotation">@RequestBody</span> <span class="class-name">UserDTO</span> userDTO) {</div>
+                    <div class="code-line"></div>
+                    <div class="code-line">        <span class="comment">// Clean, production-ready code</span></div>
+                    <div class="code-line">        <span class="class-name">User</span> user = userService.<span class="method">create</span>(userDTO);</div>
+                    <div class="code-line">        <span class="keyword">return</span> <span class="class-name">ResponseEntity</span>.<span class="method">ok</span>(user);</div>
+                    <div class="code-line">    }</div>
+                    <div class="code-line">}</div>
+                </div>
+            </div>
+
+            <!-- Right: Tech Stack -->
+            <div class="tech-section">
+                <div class="tech-badge">
+                    <div class="tech-icon spring">🍃</div>
+                    <div class="tech-info">
+                        <h3>Spring Boot 3</h3>
+                        <p>Latest enterprise framework</p>
+                    </div>
+                </div>
+
+                <div class="tech-badge">
+                    <div class="tech-icon postgres">🐘</div>
+                    <div class="tech-info">
+                        <h3>PostgreSQL</h3>
+                        <p>Optimized database design</p>
+                    </div>
+                </div>
+
+                <div class="tech-badge">
+                    <div class="tech-icon docker">🐳</div>
+                    <div class="tech-info">
+                        <h3>Docker Ready</h3>
+                        <p>Containerized deployment</p>
+                    </div>
+                </div>
+
+                <div class="tech-badge">
+                    <div class="tech-icon jwt">🔐</div>
+                    <div class="tech-info">
+                        <h3>JWT Security</h3>
+                        <p>Enterprise authentication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Stats -->
+        <div class="footer">
+            <div class="stat">
+                <div class="stat-value">60+</div>
+                <div class="stat-label">Production APIs</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">4+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">8,320+</div>
+                <div class="stat-label">Development Hours</div>
+            </div>
+            <a href="#" class="live-demo">🚀 IIT Patna Graduate</a>
+        </div>
+    </div>
+</body>
+</html>
