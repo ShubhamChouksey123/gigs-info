@@ -78,9 +78,9 @@ Let's build something amazing together! 💪
 
 ## Pricing Packages
 
-### 📦 BASIC - Simple Web Application
-**Price:** $200
-**Delivery Time:** 7 days
+### 📦 BASIC - Simple Web Application 🔥 FIRST CLIENT SPECIAL
+**Price:** $50
+**Delivery Time:** 3 days
 **Revisions:** 2
 
 #### Includes:
@@ -97,9 +97,9 @@ Let's build something amazing together! 💪
 
 ---
 
-### 🌟 STANDARD - Full-Featured Web App (MOST POPULAR)
-**Price:** $500
-**Delivery Time:** 14 days
+### 🌟 STANDARD - Full-Featured Web App (MOST POPULAR) 🔥 LAUNCH OFFER
+**Price:** $150
+**Delivery Time:** 7 days
 **Revisions:** 3
 
 #### Includes:
@@ -120,9 +120,9 @@ Let's build something amazing together! 💪
 
 ---
 
-### 💎 PREMIUM - Enterprise Application
-**Price:** $1000
-**Delivery Time:** 21 days
+### 💎 PREMIUM - Enterprise Application 🔥 BUILD YOUR MVP
+**Price:** $300
+**Delivery Time:** 14 days
 **Revisions:** Unlimited
 
 #### Includes:
@@ -148,15 +148,102 @@ Let's build something amazing together! 💪
 
 ## Gig Extras (Add-ons)
 
-- **Extra Fast Delivery (3 days faster):** +$100
-- **Additional Complex Feature:** +$150
-- **Payment Gateway Integration:** +$200
-- **Advanced Email Templates (5+):** +$75
-- **SMS Integration (Twilio):** +$100
-- **Admin Analytics Dashboard:** +$150
-- **API Rate Limiting & Security:** +$100
-- **Additional Month of Support:** +$75
-- **Source Code Review & Optimization:** +$150
+### Standard Extra Services Available:
+
+#### 1. Extra Fast Delivery ✓
+**Title:** "Extra Fast Delivery" (19/20 chars)
+**Enable Extra Fast Delivery**
+- Basic: I'll deliver in only 1 day for an extra $25
+- Standard: I'll deliver in only 4 days for an extra $50
+- Premium: I'll deliver in only 9 days for an extra $75
+
+#### 2. Additional Complex Feature
+**Title:** "Complex Feature Add" (19/20 chars)
+**Description:** "I will add one additional complex feature (e.g., payment processing, advanced search, analytics)"
+**Price:** +$60
+**Delivery Extension:** 3 Days
+
+#### 3. Payment Gateway Integration
+**Title:** "Payment Integration" (19/20 chars)
+**Description:** "I will integrate Stripe or PayPal with complete webhook handling and transaction management"
+**Price:** +$80
+**Delivery Extension:** 3 Days
+
+#### 4. Advanced Email Templates
+**Title:** "Email Templates" (15/20 chars)
+**Description:** "I will create 5+ professional HTML email templates for notifications, marketing, and transactional emails"
+**Price:** +$30
+**Delivery Extension:** 2 Days
+
+#### 5. SMS Integration
+**Title:** "SMS/Twilio Setup" (16/20 chars)
+**Description:** "I will integrate Twilio SMS for OTP, notifications, and 2FA authentication"
+**Price:** +$40
+**Delivery Extension:** 2 Days
+
+#### 6. Admin Analytics Dashboard
+**Title:** "Analytics Dashboard" (19/20 chars)
+**Description:** "I will create interactive admin dashboard with charts, reports, and data visualization"
+**Price:** +$60
+**Delivery Extension:** 3 Days
+
+#### 7. API Rate Limiting & Security
+**Title:** "API Security Layer" (18/20 chars)
+**Description:** "I will implement rate limiting, request throttling, and advanced API security measures"
+**Price:** +$40
+**Delivery Extension:** 2 Days
+
+#### 8. Additional Month of Support
+**Title:** "Extended Support" (16/20 chars)
+**Description:** "I will provide one additional month of bug fixes and technical support"
+**Price:** +$30
+**Delivery Extension:** None
+
+#### 9. Source Code Review & Optimization
+**Title:** "Code Optimization" (17/20 chars)
+**Description:** "I will review and optimize existing code for performance, security, and best practices"
+**Price:** +$60
+**Delivery Extension:** 2 Days
+
+---
+
+### Custom Gig Extras:
+
+**Custom Extra 1 - Additional Pages**:
+- Title: "Price per page" (14/20 chars)
+- Description: "I will add additional pages to your web application"
+- For an extra: $15
+- and an additional: [SELECT: 1 Day]
+
+**Custom Extra 2 - Database Tables**:
+- Title: "Database table add" (18/20 chars)
+- Description: "I will add additional database tables with complete CRUD functionality"
+- For an extra: $10
+- and an additional: [SELECT: 1 Day]
+
+**Custom Extra 3 - Third-Party API**:
+- Title: "API Integration" (15/20 chars)
+- Description: "I will integrate any external API (social media, maps, weather, payment, etc.)"
+- For an extra: $40
+- and an additional: [SELECT: 2 Days]
+
+**Custom Extra 4 - Export Functionality**:
+- Title: "Data Export Feature" (19/20 chars)
+- Description: "I will add PDF, Excel, or CSV export functionality for reports and data"
+- For an extra: $35
+- and an additional: [SELECT: 2 Days]
+
+**Custom Extra 5 - Scheduled Tasks**:
+- Title: "Cron/Scheduled Jobs" (19/20 chars)
+- Description: "I will implement scheduled tasks for automated emails, backups, or data processing"
+- For an extra: $30
+- and an additional: [SELECT: 1 Day]
+
+**Custom Extra 6 - File Upload System**:
+- Title: "File Upload System" (18/20 chars)
+- Description: "I will add secure file upload with validation, image processing, and cloud storage"
+- For an extra: $35
+- and an additional: [SELECT: 2 Days]
 
 ---
 
@@ -339,4 +426,26 @@ A: Yes! I use Java 17+ with modern features, Spring Boot 3.x, and follow current
 - **Proof:** Quiz platform as comprehensive portfolio piece
 - **Trust Builders:** Detailed process, testing included, comprehensive documentation
 - **SEO Keywords:** Spring Boot developer, Java web application, custom web development, PostgreSQL
+
+---
+
+## Pricing Strategy & Updates
+
+**Price Positioning Strategy:**
+- **Basic ($50)**: Ultra-competitive "First Client Special" - unbeatable entry price with enterprise quality
+- **Standard ($150)**: Incredible value - full-featured professional web app at fraction of market rate
+- **Premium ($300)**: Complete enterprise solution with ALL features at breakthrough pricing to build reviews
+
+**Pricing Updates Summary:**
+- Basic: $200 → $50 (75% reduction), 7 days → 3 days - FIRST CLIENT SPECIAL
+- Standard: $500 → $150 (70% reduction), 14 days → 7 days - BUILD REVIEWS PRICING
+- Premium: $1000 → $300 (70% reduction), 21 days → 14 days - MVP LAUNCH OFFER
+
+**Strategy:** Aggressive introductory pricing to secure first 5-10 clients and get 5-star reviews. Once established (10+ reviews with strong portfolio), gradually increase to $100/$250/$500.
+
+**Competitive Advantage:**
+- Live demo: http://161.118.188.237:8080 (production quiz platform)
+- Proven enterprise-grade quality
+- Fast delivery times with comprehensive features
+- All extras reduced by ~40-60% for launch period
 
