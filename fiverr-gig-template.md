@@ -369,20 +369,44 @@ This step includes: Package Tiers (Basic, Standard, Premium) with pricing, deliv
 ### Custom Gig Extras
 **Click "+ Add Gig Extra" to create custom extras beyond the standard options**
 
+**Format for Each Custom Extra:**
+- **Title** (Required): [20 characters max] - e.g., "Price per additional"
+- **Description** (Required): [Text field] - e.g., "I will add additional endpoint"
+- **For an extra** (Required): $[amount]
+- **and an additional** (Required): [SELECT from dropdown] - Dropdown options:
+  - None (no additional delivery time)
+  - 1 Day
+  - 2 Days
+  - 3 Days
+  - 4 Days
+  - 5 Days
+  - 6 Days
+  - 7 Days
+  - 8 Days
+  - 9 Days
+  - 10 Days
+  - 11 Days
+  - 12 Days
+  - 13 Days
+  - 14 Days
+
 **Custom Extra 1:**
-- Name: [Custom extra name]
-- Description: [What this extra includes]
-- Price: $[amount]
+- Title: [20 chars max - e.g., "Price per additional"]
+- Description: [e.g., "I will add additional endpoint"]
+- For an extra: $[amount]
+- and an additional: [SELECT from dropdown: None, 1 Day, 2 Days, 3 Days, ... 14 Days]
 
 **Custom Extra 2:**
-- Name: [Custom extra name]
+- Title: [20 chars max]
 - Description: [What this extra includes]
-- Price: $[amount]
+- For an extra: $[amount]
+- and an additional: [SELECT from dropdown: None, 1 Day, 2 Days, 3 Days, ... 14 Days]
 
 **Custom Extra 3:**
-- Name: [Custom extra name]
+- Title: [20 chars max]
 - Description: [What this extra includes]
-- Price: $[amount]
+- For an extra: $[amount]
+- and an additional: [SELECT from dropdown: None, 1 Day, 2 Days, 3 Days, ... 14 Days]
 
 **Strategy Tips:**
 - Extra fast delivery is most popular (enable for all tiers)
